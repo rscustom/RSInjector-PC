@@ -7,6 +7,7 @@ int main()
 {
 	DWORD pid;
 	HWND hwnd;
+	int tries = 0;
 	//Search for the RS window
 	hwnd = FindWindow(NULL, L"Rocksmith 2014");
 	
@@ -55,7 +56,6 @@ int main()
 			}
 		}
 
-		system("pause");
 		return 0;
 		
 	}
